@@ -1,6 +1,1 @@
-/FileStoreBot
-│── main.py
-│── config.py
-│── requirements.txt
-│── 
-│── .env
+web: python main.py
