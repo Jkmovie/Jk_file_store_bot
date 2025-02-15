@@ -1,6 +1,6 @@
-/FileStoreBot
-│── main.py
-│── config.py
-│── .txt
-│── Procfile
-│── .env
+python-telegram-bot==20.0
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+python-dotenv
