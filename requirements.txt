@@ -1,0 +1,6 @@
+/FileStoreBot
+│── main.py
+│── config.py
+│── .txt
+│── Procfile
+│── .env
