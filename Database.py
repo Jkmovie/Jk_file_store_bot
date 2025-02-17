@@ -1,15 +1,17 @@
-# MongoDB कनेक्शनसाठी साधा कोड
-
-import pymongo
 from pymongo import MongoClient
-import os
 
-client = MongoClient(os.environ['MONGODB_URI'])  # MongoDB URI पर्यावरणातून घेणे
-db = client['file_store_db']  # तुमच्या डेटाबेसचे नाव
-collection = db['files']  # कलेक्शन नाव
+# तुमचा MongoDB URI येथे ठेवा
+MONGO_URI = "mongodb+srv://username:password@cluster.mongodb.net/?retryWrites=true&w=majority"
 
-def save_file(file_data):
-    collection.insert_one(file_data)
+client = MongoClient(MONGO_URI)
+db = client["your_database"]  # डेटाबेसचे नाव बदला
+collection = db["your_collection"]  # कलेक्शनचे नाव बदला
 
-def get_file(file_id):
-    return collection.find_one({"_id": file_id})
+def insert_data(data):
+    """MongoDB मध्ये डेटा घालण्यासाठी फंक्शन"""
+    collection.insert_one(data)
+    return "Data inserted successfully"
+
+def get_data(query):
+    """MongoDB मधून डेटा मिळवण्यासाठी फंक्शन"""
+    return collection.find_one(query)
