@@ -1,5 +1,5 @@
 # Telegram Bot Token
-BOT_TOKEN = "your_bot_token_here"
+BOT_TOKEN = ""
 
 # MongoDB URI
 MONGO_URI = "mongodb://jkb73212:S74I9tDQxqJywRmJ@cluster0-shard-00-00.wwify.mongodb.net:27017,cluster0-shard-00-01.wwify.mongodb.net:27017,cluster0-shard-00-02.wwify.mongodb.net:27017/?replicaSet=atlas-xxxxxx-shard-0&ssl=true&authSource=admin"
