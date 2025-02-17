@@ -1,7 +1,8 @@
 python-telegram-bot==20.0
-google-auth
-google-auth-oauthlib
-google-auth-httplib2
-google-api-python-client
-python-dotenv
-pymongo[srv]
+pymongo==3.11.4
+requests==2.26.0
+python-dotenv==0.19.2
+imdbpy==2021.10.3
+schedule==1.1.0
+flask==2.0.2
+loguru==0.5.3
