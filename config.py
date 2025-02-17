@@ -1,9 +1,8 @@
-import os
-from dotenv import load_dotenv
+# Telegram Bot Token
+BOT_TOKEN = "your_bot_token_here"
 
-load_dotenv()
+# MongoDB URI
+MONGO_URI = "your_mongo_uri_here"
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")  # Telegram Bot Token
-GDRIVE_FOLDER_ID = os.getenv("GDRIVE_FOLDER_ID")  # Google Drive Folder ID
-CREDENTIALS_FILE = "credentials.json"  # Google API Credentials
-MONGO_URI = os.getenv("MONGO_URI")  # MongoDB Connection String
+# Force Subscribe Channel
+FORCE_SUBSCRIBE_CHANNEL = "@your_channel_name"
